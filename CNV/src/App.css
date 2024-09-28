@@ -1,0 +1,132 @@
+/* Chess-themed colors */
+.chess-page {
+  background-color: #f0f0f0;
+}
+
+header {
+  background: #2b2b2b;
+  color: white;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.chessboard-section {
+  background-color: #d4d4d4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Placeholder for chessboard */
+.chessboard-placeholder {
+  width: 100%;
+  padding-bottom: 100%;
+  /* Makes it square */
+  background: #fff;
+  position: relative;
+}
+
+.chessboard-pattern {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #b58863 25%, transparent 25%),
+    linear-gradient(-45deg, #b58863 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #b58863 75%),
+    linear-gradient(-45deg, transparent 75%, #b58863 75%);
+  background-size: 20px 20px;
+  background-position: 0px 0px, 0px 10px, 10px -10px, -10px 0px;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #4c76d4;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #3b5fb1;
+}
+
+/* Footer */
+footer {
+  background-color: #2b2b2b;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .chessboard-section {
+    margin-top: 2rem;
+  }
+}
+
+.chessBoard {
+  width: 320px;
+}
+
+.chessContainer {
+  display: flex;
+  flex-direction: column;
+  /* Stack chessboard and buttons vertically */
+  align-items: center;
+  /* Center chessboard and buttons horizontally */
+  justify-content: center;
+  /* Center both vertically */
+  height: 100%;
+  /* Ensures it takes up the available height */
+}
+
+.chessBoard {
+  margin-bottom: 20px;
+  /* Add some space between chessboard and buttons */
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  /* Center the buttons horizontally */
+  gap: 10px;
+  /* Add some spacing between buttons */
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #007bff;
+  /* Hover effect for buttons */
+}
+
+.card-title {
+  font-family: 'Montserrat', sans-serif;
+  /* Elegant font */
+  font-size: 24px;
+  /* Increase size for better readability */
+  font-weight: 700;
+  /* Bold for emphasis */
+  color: #333;
+  /* Dark grey color */
+  text-transform: uppercase;
+  /* Capitalize the title */
+  letter-spacing: 1.5px;
+  /* Add spacing between letters */
+  margin-bottom: 20px;
+  /* Add some space below */
+  background: linear-gradient(90deg, #000, #555);
+  /* Subtle gradient effect */
+  -webkit-background-clip: text;
+  /* Clip gradient to text */
+  color: transparent;
+  /* Make background gradient visible */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  /* Add a subtle shadow */
+}
